@@ -15,13 +15,13 @@ export const createOrder=async (req, res)=>{
             quantity:10
             }
         ],
+        /**ES LO ULTIMO Q AGREGUE */
         back_urls:{
             success:"http://localhost:3000/success",
             failure:"http://localhost:3000/failure",
             pending:"http://localhost:3000/pending",
-        }
-
-    })
+        },
+    });
     console.log(result)
     res.send('creando  orden');
 };
